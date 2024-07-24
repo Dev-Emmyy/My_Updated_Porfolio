@@ -75,7 +75,7 @@ export default function Home() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.1, duration: 0.2 }}
             >
-              {['Home', 'Skills', 'Work', 'Hire', 'Blog', 'Contact'].map((item, index) => (
+              {['Home', 'Skill', 'Work', 'Hire', 'Blog', 'Contact'].map((item, index) => (
                 <motion.a
                   key={item}
                   href={`#${item.toLowerCase()}`}
