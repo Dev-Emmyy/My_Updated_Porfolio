@@ -43,12 +43,12 @@ const SkillsSection = () => {
 
   return (
     <div className='flex flex-col'>
-        <h1 className='text-4xl font-bold mb-2 text-white text-center font-mono mb-10'>Skills</h1>
+        <h1 className='text-4xl font-bold text-white text-center font-mono mb-10'>Skills</h1>
         <div ref={skillsRef} className="grid grid-cols-2 md:grid-cols-4 gap-10">
         {skills.map((skill, index) => (
             <div 
             key={index} 
-            className="flex items-center py-3 px-3 bg-gradient-to-br from-purple-500/50 to-indigo-600/50 rounded-lg shadow-md opacity-0 translate-x-[-50px] transition-all duration-500 ease-out"
+            className="flex items-center py-4 px-3 bg-gradient-to-br from-purple-500/50 to-indigo-600/50 rounded-lg shadow-md opacity-0 translate-x-[-50px] transition-all duration-500 ease-out"
             >
             <skill.icon className={`text-4xl ${skill.color} mr-3`} />
             <div className="text-sm font-medium">{skill.name}</div>

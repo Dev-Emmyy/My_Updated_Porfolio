@@ -10,14 +10,16 @@ import { FaGithub, FaTwitter,FaLinkedin } from "react-icons/fa";
 import VideoBackground from "./components/VideoBackground";
 import SkillsSection from "./components/Skills";
 import My_Work from "./components/My_Work";
-
+import Hire from "./components/Hire";
+import Blog from "./components/Blog";
+import ContactSection from "./components/Contact";
 
 export default function Home() {
   return (
     <main className="flex flex-col jusgtify-between gap-20">
       <div className="flex flex-row justify-between w-full gap-12">
         {/* Left Sidebar */}
-        <div className="flex flex-col justify-betwwen items-center py-4 gap-10 ml-5 mt-6 ">
+        <div className="flex flex-col justify-betwwen items-center py-4 gap-12 ml-5 mt-6 ">
           {/* Logo */}
           <div>
             <Image
@@ -29,7 +31,7 @@ export default function Home() {
           </div>
           
           {/* Icons */}
-          <div className="bg-gray-800 flex flex-col justify-between items-center gap-8 w-20 py-6 rounded-2xl">
+          <div className="bg-gradient-to-br from-purple-500/50 to-indigo-600/50 flex flex-col justify-between items-center gap-8 w-20 py-10 rounded-2xl">
             <div><IoIosContact className="text-white text-4xl" /></div>
             <div><CiCirclePlus className="text-white text-4xl" /></div>
             <div><RxDashboard className="text-white text-4xl" /></div>
@@ -65,6 +67,19 @@ export default function Home() {
       <div>
         <My_Work/>
       </div>
+
+      <div>
+        <Hire/>
+      </div>
+
+      <div>
+        <Blog/>
+      </div>
+
+      <div>
+        <ContactSection/>
+      </div>
+     
    </main>
   );
 }
