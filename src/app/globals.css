@@ -38,3 +38,7 @@
  .animate-skill {
    animation: skill-appear 0.5s forwards ease-out;
  }
+
+ html {
+  scroll-behavior: smooth;
+}

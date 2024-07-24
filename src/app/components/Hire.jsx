@@ -22,9 +22,7 @@ const Hire = () => {
                     <p className="text-gray-300 text-lg">
                         The key to building long term relationships is trust. I take the responsibility of being your development partner seriously. My design agreement gives you peace of mind that your intellectual property is safeguarded.
                     </p>
-                    <button className="bg-violet-950 hover:bg-violet-700 text-white font-bold py-3 px-10 rounded transition duration-300 ease-in-out transform hover:scale-105">
-                        Hire Me
-                    </button>
+                     <a href="/pdf/Resume.pdf" download className="bg-violet-950 hover:bg-violet-700 text-white font-bold py-3 px-10 rounded transition duration-300 ease-in-out transform hover:scale-105 inline-block">Hire Me</a>
                     </div>
                 </div>
                 </div>

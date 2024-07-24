@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoBackground = () => {
   return (
-    <div className="absolute inset-0 w-full h-full overflow-hidden rounded-2xl">
+ <div className="absolute inset-0 w-full h-full overflow-hidden rounded-2xl">
       <video 
         autoPlay 
         muted 
@@ -11,8 +11,11 @@ const VideoBackground = () => {
       >
         <source src="/video/background.mp4" type="video/mp4" />
       </video>
-    </div>
-  );
+    </div>  );
 };
 
 export default VideoBackground;
+
+
+
+

@@ -1,5 +1,7 @@
 'use client';
 
+'use client';
+
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -12,14 +14,14 @@ import 'swiper/css/navigation';
 
 const blogPosts = [
   {
-    title: "Emerging Technologies to watch in 2024",
-    image: "/blog/metaverse.jpg",
-    link: "https://medium.com/@emmanuelugochukwu2000/emerging-technologies-to-watch-in-2023-926d3f15c8a8"
-  },
-  {
     title: "The future of work in a tech-driven world",
     image: "/blog/tech-driven-world.jpg",
     link: "https://medium.com/@emmanuelugochukwu2000/the-future-of-work-in-a-tech-driven-world-7e4fda9ec730"
+  },  
+  {
+    title: "Emerging Technologies to watch in 2024",
+    image: "/blog/metaverse.jpg",
+    link: "https://medium.com/@emmanuelugochukwu2000/emerging-technologies-to-watch-in-2023-926d3f15c8a8"
   },
   {
     title: "How to get started in a tech career",
@@ -50,14 +52,24 @@ const Blog = () => {
           <div className="blog-posts-container">
             <Swiper
               modules={[Navigation]}
-              spaceBetween={30}
-              slidesPerView={3}
+              spaceBetween={20}
+              slidesPerView={1}
               navigation={{
                 prevEl: '.swiper-button-prev',
                 nextEl: '.swiper-button-next',
               }}
               onSwiper={(swiper) => {
                 swiperRef.current = swiper;
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
               }}
               className="static-swiper"
             >
@@ -89,14 +101,78 @@ const Blog = () => {
           </div>
 
           {/* Custom navigation arrows */}
-          <button className="swiper-button-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-100 rounded-full p-2 z-10 transition-all duration-300 ease-in-out">
+          <div className="swiper-button-prev custom-swiper-button-prev">
             <ChevronLeft className="w-6 h-6 text-blue-600" />
-          </button>
-          <button className="swiper-button-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-100 rounded-full p-2 z-10 transition-all duration-300 ease-in-out">
+          </div>
+          <div className="swiper-button-next custom-swiper-button-next">
             <ChevronRight className="w-6 h-6 text-blue-600" />
-          </button>
+          </div>
         </div>
       </section>
+
+      <style jsx global>{`
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+          display: none;
+        }
+
+        .custom-swiper-button-prev,
+        .custom-swiper-button-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 40px;
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          z-index: 10;
+          transition: background-color 0.3s ease;
+        }
+
+        .custom-swiper-button-prev:hover,
+        .custom-swiper-button-next:hover {
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+        .custom-swiper-button-prev {
+          left: 10px;
+        }
+
+        .custom-swiper-button-next {
+          right: 10px;
+        }
+
+        @media (max-width: 640px) {
+          .blog-post-card {
+            margin-bottom: 1rem;
+          }
+          .blog-post-image {
+            height: 200px;
+          }
+          .blog-post-title {
+            font-size: 1.1rem;
+          }
+        }
+
+        @media (min-width: 641px) and (max-width: 768px) {
+          .blog-post-image {
+            height: 180px;
+          }
+          .blog-post-title {
+            font-size: 1.2rem;
+          }
+        }
+
+        @media (min-width: 769px) {
+          .blog-post-image {
+            height: 200px;
+          }
+        }
+      `}</style>
     </div>
   );
 };
