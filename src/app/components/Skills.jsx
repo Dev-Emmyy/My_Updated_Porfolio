@@ -51,7 +51,7 @@ const SkillsSection = () => {
             className="flex items-center py-4 px-3 bg-gradient-to-br from-purple-500/50 to-indigo-600/50 rounded-lg shadow-md opacity-0 translate-x-[-50px] transition-all duration-500 ease-out"
             >
             <skill.icon className={`text-4xl ${skill.color} mr-3`} />
-            <div className="text-sm font-medium">{skill.name}</div>
+            <div className="text-sm text-white font-medium">{skill.name}</div>
             </div>
         ))}
         </div>

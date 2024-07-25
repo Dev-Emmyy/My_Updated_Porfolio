@@ -157,7 +157,7 @@ export default function Home() {
                     <a href="https://github.com/Dev-Emmyy" target='blank'>
                       <FaGithub className="text-2xl cursor-pointer text-white" />
                     </a> 
-                    <a href="http://" target='blank'>
+                    <a href="https://www.linkedin.com/in/emmanuel-ugochukwu-4205b631b/" target='blank'>
                       <FaLinkedin className="text-2xl cursor-pointer text-white" />
                     </a>
                   </div>
