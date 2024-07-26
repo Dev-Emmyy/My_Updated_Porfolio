@@ -42,7 +42,7 @@ const Blog = () => {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <section className="mb-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-2">Latest <span className="text-blue-600">Posts</span></h1>
+          <h1 className="text-3xl text-white font-bold mb-2">Latest<span className="text-purple-700"> Posts</span></h1>
           <p className="text-gray-600">See all my posts</p>
           <a href="https://medium.com/@emmanuelugochukwu2000" className="text-blue-600 hover:underline">View all</a>
         </div>

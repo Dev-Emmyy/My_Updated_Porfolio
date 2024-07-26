@@ -51,9 +51,9 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row bg-gray-100 font-mono">
+    <div className="flex flex-col md:flex-row font-mono">
       {/* Personal Info Section */}
-      <div className="w-full md:w-1/3 bg-blue-600 text-white p-8">
+      <div className="w-full md:w-1/3 bg-gradient-to-br from-purple-500/50 to-indigo-600/50 text-white p-8">
         <div className="flex items-center mb-6">
           <Image
             src="/image/logo.png"
@@ -99,7 +99,7 @@ const ContactSection = () => {
       {/* Contact Form Section */}
       <div className="w-full md:w-2/3 bg-neutral-900 p-8">
         <div>
-          <h1 className="text-3xl font-bold text-white mb-6">Contact <span className="text-blue-500">Me.</span></h1>
+          <h1 className="text-3xl font-bold text-white mb-6">Contact<span className="text-purple-700"> Me</span></h1>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input 
               type="text" 
@@ -130,7 +130,7 @@ const ContactSection = () => {
             ></textarea>
             <button 
               type="submit" 
-              className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300"
+              className="bg-gradient-to-br from-purple-500/50 to-indigo-600/50 text-white py-2 px-4 rounded hover:bg-purple-700 transition duration-300"
               disabled={isSubmitting}
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
