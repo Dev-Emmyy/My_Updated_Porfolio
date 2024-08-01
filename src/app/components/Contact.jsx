@@ -71,7 +71,7 @@ const ContactSection = () => {
         <a href="/pdf/Resume.pdf" download className="bg-white text-blue-600 py-2 px-4 rounded font-bold mb-6 hover:bg-blue-100 transition duration-300 inline-block">DOWNLOAD CV</a>
         
         <div className="flex items-center space-x-4 mb-6">
-          <a href="https://web.facebook.com/Emmaugo.214/" target='blank'>
+          <a href="https://www.facebook.com/Emmaugo.214?mibextid=ZbWKwL" target='blank'>
            <IoLogoFacebook className="text-2xl cursor-pointer hover:text-blue-300" />
           </a>
           <a href="https://x.com/9Gunna9" target='blank'>

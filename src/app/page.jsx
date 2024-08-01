@@ -148,7 +148,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
                   <a href="/pdf/Resume.pdf" download className="bg-white text-black px-4 py-2 rounded font-mono inline-block w-full sm:w-auto text-center">DOWNLOAD CV</a>
                    <div className="flex items-center space-x-4">
-                    <a href="https://web.facebook.com/Emmaugo.214/" target='blank'>
+                    <a href="https://www.facebook.com/Emmaugo.214?mibextid=ZbWKwL" target='blank'>
                       <IoLogoFacebook className="text-2xl cursor-pointer text-white" />
                     </a>
                     <a href="https://x.com/9Gunna9" target='blank'>
